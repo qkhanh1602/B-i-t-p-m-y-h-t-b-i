@@ -37,7 +37,7 @@ def solver(start_env):
     i, j = 0, 0 # Đặt máy ở góc trên cùng bên trái
     step = 1
 
-    print("=== TRẠNG THÁI PHÒNG BAN ĐẦU (0: Bẩn, 1: Sạch) ===")
+    print(" TRẠNG THÁI PHÒNG BAN ĐẦU ")
     for row in env:
         print(row)
     print("=" * 45 + "\n")
@@ -52,7 +52,7 @@ def solver(start_env):
         print(f"Bước {step}: Vị trí ({i}, {j}) | Trạng thái: {'Bẩn' if env[i][j] == 0 else 'Sạch'} -> Hành động: {action}")
         
         if action == "STOP":
-            print("Máy đã đi hết quỹ đạo cài đặt sẵn và dừng lại.")
+            print("Máy đã đi hết các ô và dừng lại.")
             break
 
         env, i, j = action_exec(env, action, i, j)
