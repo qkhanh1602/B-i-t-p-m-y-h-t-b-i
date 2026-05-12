@@ -34,7 +34,7 @@ def action_exec(env, action, i, j):
 
 def solver(start_env):
     env = [row[:] for row in start_env]
-    i, j = 0, 0 # Đặt máy ở góc trên cùng bên trái
+    i, j = 0, 0
     step = 1
 
     print(" TRẠNG THÁI PHÒNG BAN ĐẦU ")
